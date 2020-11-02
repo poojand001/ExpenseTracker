@@ -9,7 +9,6 @@ class Register extends Component {
             Email: "",
             Password: "",
             UserName: "",
-            isRegistered: false,
             message: ""
         };
         this.registerUser = this.registerUser.bind(this);
@@ -17,27 +16,24 @@ class Register extends Component {
 
     registerUser() {
         axios.post('https://expense-manager-shipmnts.herokuapp.com/api/v1/register', { user_name: this.state.UserName.value, email: this.state.Email.value, password: this.state.Password.value })
-            .then(response => { this.setState({ isRegistered: true, message: "User has been added" }) })
+            .then(response => { this.setState({ message: "User has been added" }) })
             .catch(response => { this.setState({ message: "User has not been added" }) });
     }
     render() {
-        let show;
-        if (this.state.isRegistered) {
-            show = < Link to = "/login" > < /Link>
-        } else {
-            show = < Grid centered columns = { 2 } >
-                <
-                Grid.Column >
-                <
-                Header as = "h2"
+        return ( <
+            Grid centered columns = { 2 } >
+            <
+            Grid.Column >
+            <
+            Header as = "h2"
             textAlign = "center" >
-                Register <
-                /Header> <
+            Register <
+            /Header> <
             Segment >
-                <
-                Form size = "large" >
-                <
-                Form.Input fluid icon = "user"
+            <
+            Form size = "large" >
+            <
+            Form.Input fluid icon = "user"
             iconPosition = "left"
             placeholder = "User Name"
             onChange = {
@@ -58,21 +54,18 @@ class Register extends Component {
             onChange = {
                 (event, newValue) => this.setState({ Password: newValue })
             }
-            />
-
+            /> <
+            Link path = "/login" >
             <
             Button color = "blue"
             fluid size = "large"
             onClick = { this.registerUser } >
-                Register <
-                /Button> < /
+            Register <
+            /Button> </Link > < /
             Form > <
-                /Segment> < /
+            /Segment> < /
             Grid.Column > < /
             Grid >
-        }
-        return (
-            show
         )
     }
 }
