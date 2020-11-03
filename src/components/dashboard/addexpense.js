@@ -29,8 +29,8 @@ class AddExpense extends Component {
         "https://expense-manager-shipmnts.herokuapp.com/api/v1/user/add_expense",
         {
           category: this.props.category,
-          amount: this.state.amount,
-          description: this.state.description,
+          amount: this.state.amount.value,
+          description: this.state.description.value,
         }
       )
       .then((response) => {
@@ -81,7 +81,7 @@ class AddExpense extends Component {
                   onChange={(event, newValue) =>
                     this.setState({ description: newValue })
                   }
-                />
+                />{" "}
               </Form>{" "}
             </Modal.Description>{" "}
           </Modal.Content>{" "}
