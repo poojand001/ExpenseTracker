@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Task/static/css/main.6b868c9f.chunk.css",
+    "main.js": "/Task/static/js/main.e7345be1.chunk.js",
+    "main.js.map": "/Task/static/js/main.e7345be1.chunk.js.map",
+    "runtime-main.js": "/Task/static/js/runtime-main.8365a5e5.js",
+    "runtime-main.js.map": "/Task/static/js/runtime-main.8365a5e5.js.map",
+    "static/css/2.5baa7a78.chunk.css": "/Task/static/css/2.5baa7a78.chunk.css",
+    "static/js/2.0eca49f5.chunk.js": "/Task/static/js/2.0eca49f5.chunk.js",
+    "static/js/2.0eca49f5.chunk.js.map": "/Task/static/js/2.0eca49f5.chunk.js.map",
+    "static/js/3.b51c9d12.chunk.js": "/Task/static/js/3.b51c9d12.chunk.js",
+    "static/js/3.b51c9d12.chunk.js.map": "/Task/static/js/3.b51c9d12.chunk.js.map",
+    "index.html": "/Task/index.html",
+    "static/css/2.5baa7a78.chunk.css.map": "/Task/static/css/2.5baa7a78.chunk.css.map",
+    "static/css/main.6b868c9f.chunk.css.map": "/Task/static/css/main.6b868c9f.chunk.css.map",
+    "static/js/2.0eca49f5.chunk.js.LICENSE.txt": "/Task/static/js/2.0eca49f5.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/Task/static/media/outline-icons.ddae9b1b.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8365a5e5.js",
+    "static/css/2.5baa7a78.chunk.css",
+    "static/js/2.0eca49f5.chunk.js",
+    "static/css/main.6b868c9f.chunk.css",
+    "static/js/main.e7345be1.chunk.js"
+  ]
+}
